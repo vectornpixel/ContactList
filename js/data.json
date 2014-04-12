@@ -1,0 +1,29 @@
+
+[{ 
+"firstname":"Asim",
+"lastname":"Craft",
+"phone":"000.000.000",
+"userId" : "asim-craft",
+"email":"info@useremail.com"
+},
+{ 
+"firstname":"Tim",
+"lastname":"Young",
+"phone":"000.000.000",
+"userId" : "tim-young",
+"email":"info@useremail.com"
+},
+{ 
+"firstname":"Keith",
+"lastname":"Sway",
+"userId" : "keith-sway",
+"phone":"000.000.000",
+"email":"info@useremail.com"
+},
+{ 
+"firstname":"Bob",
+"lastname":"Billard",
+"userId" : "bob-billard",
+"phone":"000.000.000",
+"email":"info@useremail.com"
+}]

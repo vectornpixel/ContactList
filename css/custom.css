@@ -1,0 +1,59 @@
+body{
+padding:25px;
+background-color:#045274;
+}
+.center-block{
+	margin-left:auto;
+	margin-right:auto;
+}
+h1,h2,h3,h4,h5,p{
+	font-weight:200;
+	letter-spacing:3px;
+	margin:0 ;
+
+}
+h2,h4{
+	color:#fff;
+}
+p{
+	color:#777777;
+}
+.contacts h2{
+	border-bottom:1px solid #eeeeee;
+	padding-bottom:10px;
+	margin-bottom:20px;
+}
+
+.contacts{
+	margin-left:auto;
+	margin-right:auto;
+	width:500px;
+}
+
+ul.contact-list{
+	background-color:#fff;
+
+}
+
+.contact-list li{
+	background-color:#e9e9e9;	
+	padding:20px;
+	color:#336172;
+	height:100%;
+}
+.contact-list li:nth-child(even){
+	background-color:#dddddd;
+}
+.contact-list li img{
+	width:100px;
+	height:100px;
+	float:left;
+	margin-right:10px;
+}
+.user-info{
+	background-color:#e9e9e9;	
+	padding:20px;
+	color:#336172;
+	text-align:center;
+
+}

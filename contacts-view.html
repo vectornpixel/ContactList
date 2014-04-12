@@ -1,0 +1,25 @@
+<section>
+	
+				<div class="container">
+					<div class="contacts">
+				
+					<h2>Contact List</h2>
+					<label><h4>Search Contacts</h4></label>
+						<input type="text" ng-model="search">
+							<ul class="contact-list unstyled">
+								<li ng-repeat="users in userinfo | filter:search">
+									<img src="images/asim_tn.jpg">
+								
+									<h3>{{users.firstname}} {{users.lastname}}</h3>
+									<p>{{users.phone}}</p>
+									<p>{{users.email}}</p>
+									<p><a href="#/contacts/{{users.userId}}">View More</a></p>
+								</li>
+			
+							</ul>
+					
+					</div>
+	
+				</div><!-- /.container -->
+
+</section>

@@ -1,0 +1,141 @@
+/*------------------------------------*\
+    TABLE OF CONTENTS
+\*------------------------------------*/
+/*
+$ABOUT
+$LINKS
+$IMAGES
+$MISC ATTRIBUTES
+$DEPRECATED
+$EMPTY ELEMENTS
+*/
+
+
+
+
+
+/*------------------------------------*\
+    $ABOUT
+\*------------------------------------*/
+/*  
+Highlights potentially invalid or erroneous HTML(5) markup
+Based on Holmes Debug CSS (http://github.com/redroot/holmes/)
+
+Add the class 'debug' to the body or html tag in Firebug/Web Inspector 
+or during development. Don't forget to delete it before deployment!
+
+    - RED     == invalid markup or a missing attribute
+    - YELLOW  == potentionally erroneous markup or bad practice
+    - FUCHSIA == deprecated element or attribute
+*/
+
+
+
+
+/*------------------------------------*\
+    $LINKS
+\*------------------------------------*/
+.debug a:not([href]),
+.debug a[href=""] {
+	outline: 5px solid red;
+}
+
+.debug a[href="#"],
+.debug a[href^="javascript"],
+.debug a[title=""]{
+	outline: 5px solid #fd0;
+}
+
+
+
+
+
+/*------------------------------------*\
+    $IMAGES
+\*------------------------------------*/
+.debug img:not([alt]),
+.debug img[alt=""] {
+	outline: 5px solid red;
+}
+
+
+
+
+
+/*------------------------------------*\
+    $MISC ATTRIBUTES
+\*------------------------------------*/
+.debug label:not([for]),
+.debug label[for=""],
+.debug input:not([name]),
+.debug input[name=""],
+.debug select:not([name]),
+.debug select[name=""],
+.debug textarea:not([name]),
+.debug textarea[name=""],
+.debug abbr:not([title]),
+.debug abbr[title=""],
+.debug [class=""],
+.debug [id=""] {
+	outline: 5px solid red;
+}
+
+.debug table:not([summary]),
+.debug table[summary=""]{
+	border: 5px solid red;
+}
+
+/*  -- Inline styles and JS are bad! --*/
+.debug [style]{ 
+	outline: 5px solid #fd0;
+}
+
+
+
+
+
+/*------------------------------------*\
+    $DEPRECATED
+\*------------------------------------*/
+.debug applet, 
+.debug acronym, 
+.debug center, 
+.debug dir, 
+.debug font,   
+.debug strike, 
+.debug u, 
+.debug big,
+.debug tt,
+.debug marquee,
+.debug plaintext,  
+.debug xmp {
+	border: 5px solid fuchsia;
+}
+
+.debug *[bgproperties], 
+.debug *[topmargin], 
+.debug *[rightmargin], 
+.debug *[bottommargin], 
+.debug *[leftmargin],
+.debug *[bordercolor], 
+.debug *[bordercolordark], 
+.debug *[bordercolorlight],
+.debug table[frame] {
+	border: 5px solid fuchsia;
+}
+
+
+
+
+
+/*------------------------------------*\
+    $EMPTY ELEMENTS
+\*------------------------------------*/
+.debug div:empty, 
+.debug span:empty,
+.debug li:empty, 
+.debug p:empty,
+.debug td:empty, 
+.debug th:empty {
+	border: 5px solid #fd0;
+}
